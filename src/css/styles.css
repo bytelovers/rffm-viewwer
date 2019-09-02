@@ -1,0 +1,84 @@
+body {
+  width: 786px;
+
+  --ext-blue: #0275d8;
+  --ext-green: #5cb85c;
+  --ext-orange: #f0ad4e;
+  --ext-red: #d9534f;
+
+  --ext-spacing: 20px;
+}
+
+table {
+  border: none;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(200, 200, 200, .3);
+}
+
+table tr:nth-child(even) {
+  background-color: white;
+}
+
+table tr th {
+  border: 1px solid #ccc;
+}
+
+.table-wrapper {
+  margin-top: var(--ext-spacing);
+}
+
+.table-formatted {
+  
+}
+  .table-formatted table { width: 100%; }
+  .table-formatted td:nth-child(1),
+  .table-formatted td:nth-child(3),
+  .table-formatted td:nth-child(4) { width: 27%; }
+  .table-formatted td:nth-child(2) { width: 5%; text-align: center; }
+  .table-formatted td:nth-child(5) { width: 14%; }
+
+.button {
+  border-radius: 5px;
+  padding: 10px 15px;
+  min-width: 120px;
+  outline: none;
+}
+
+.button--csv {
+  background-color: var(--ext-green);
+  border-color: var(--ext-green);
+  color: white;
+}
+
+.button--html {
+  background-color: var(--ext-green);
+  border-color: var(--ext-green);
+  color: white;
+}
+
+.button--request {
+  background-color: var(--ext-blue);
+  border-color: var(--ext-blue);
+  color: white;
+}
+
+.action-bar {
+  text-align: right;
+}
+
+.action-bar .button {
+  margin-left: 10px;
+}
+
+.action-bar-bottom {
+  margin-top: var(--ext-spacing);
+}
+
+.not-loaded {
+  text-align: center;
+}

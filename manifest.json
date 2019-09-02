@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "RFFM scrapper",
+  "browser_action": {
+    "default_popup": "extension.html",
+    "default_icon" : "src/images/icon.png"
+   },
+  "content_scripts": [{
+    "matches": [
+      "file://*/*",
+      "*://*.rffm.es/*"
+    ],
+    "run_at": "document_end",
+    "js": [
+      "src/js/rffm-matches.js",
+      "src/js/rffm-exports.js",
+      "src/js/rffm-handler.js"
+    ]
+  }],
+  "permissions": [
+    "activeTab"
+  ]
+}
