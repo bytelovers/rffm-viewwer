@@ -9,11 +9,12 @@
   "content_scripts": [{
     "matches": [
       "file://*/*",
-      "*://*.rffm.es/*"
+      "*://www.rffm.es/pnfg/NPcd/NFG_CmpJornada*"
     ],
     "run_at": "document_end",
     "js": [
       "src/js/rffm-matches.js",
+      "src/js/rffm-form.js",
       "src/js/rffm-exports.js",
       "src/js/rffm-handler.js"
     ]
